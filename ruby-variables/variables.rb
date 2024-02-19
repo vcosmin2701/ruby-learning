@@ -15,3 +15,9 @@ puts "I'm listening to #{artist} and I like #{genre} music"
 # Variable type with kind_of? method
 puts car_brand.kind_of? String
 puts PI.class
+
+# Change the variable type
+x = 271
+p x, "original value #{x}" # original value
+x = "271"
+p x, "new value #{x}" # new value

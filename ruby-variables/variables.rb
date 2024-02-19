@@ -11,3 +11,7 @@ puts car_brand
 # Parallel assignment
 genre, artist = "Rock", "The Architects"
 puts "I'm listening to #{artist} and I like #{genre} music"
+
+# Variable type with kind_of? method
+puts car_brand.kind_of? String
+puts PI.class

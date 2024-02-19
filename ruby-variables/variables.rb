@@ -21,3 +21,15 @@ x = 271
 p x, "original value #{x}" # original value
 x = "271"
 p x, "new value #{x}" # new value
+
+# Converting Variables Values
+
+# Convert to floating point number
+y = 3
+puts "Original type of y: #{y.class}"
+y = y.to_f
+puts "The new type of y: #{y.class}"
+
+# Convert to binary, to_s -> range 1-36
+puts "The number 15 in binary is #{15.to_s(2)}"
+puts "The number 54321 in hexa is #{54321.to_s(16).upcase}"

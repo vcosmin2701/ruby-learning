@@ -24,3 +24,16 @@ puts x
 
 $y = 27 # global variable
 puts defined? $y
+
+# like global variables within the context of a single class
+@@total = 0 # class variable, shared on class level
+
+# local for specific instances of an object
+@total = 10 # instance variable
+
+# Constants declared within a class or module
+# are available anywhere within the context of that class
+# or module
+
+# Constants declared outside of a class or module are
+# assigned to global scope

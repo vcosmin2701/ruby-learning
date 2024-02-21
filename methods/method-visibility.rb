@@ -17,3 +17,20 @@ end
 obj = TestMethod.new()
 obj.publicMethod1()
 obj.publicMethod2()
+
+# Protected Access Modifier
+class Parent
+  protected
+  def protectedMethod
+    puts "protectedMethod called"
+  end
+end
+
+class Child < Parent
+  def publicMethod
+    self.protectedMethod
+  end
+end
+
+obj = Child.new()
+obj.publicMethod()

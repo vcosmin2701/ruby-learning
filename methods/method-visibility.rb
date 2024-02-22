@@ -10,7 +10,6 @@ class TestMethod
   # using public keyword
   public
   def public_method2
-    puts "public_method2 called!"
   end
 end
 

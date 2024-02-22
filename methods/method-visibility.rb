@@ -3,34 +3,50 @@
 
 class TestMethod
   # by default public
-  def publicMethod1
-    puts "publicMethod1 called!"
+  def public_method1
+    puts "public_method1 called!"
   end
 
   # using public keyword
   public
-  def publicMethod2
-    puts "publicMethod2 called!"
+  def public_method2
+    puts "public_method2 called!"
   end
 end
 
-obj = TestMethod.new()
-obj.publicMethod1()
-obj.publicMethod2()
+obj0 = TestMethod.new()
+obj0.public_method1()
+obj0.public_method2()
 
 # Protected Access Modifier
 class Parent
   protected
-  def protectedMethod
-    puts "protectedMethod called"
+  def protected_method
+    puts "protected_method called"
   end
 end
 
 class Child < Parent
-  def publicMethod
-    self.protectedMethod
+  def public_method
+    self.protected_method
   end
 end
 
 obj = Child.new()
-obj.publicMethod()
+obj.public_method()
+
+# Private Access Modifier
+class Geeks
+  private
+  def private_method
+    puts "private_method called!"
+  end
+
+  public
+  def public_method
+    private_method
+  end
+end
+
+obj1 = Geeks.new
+obj1.public_method
